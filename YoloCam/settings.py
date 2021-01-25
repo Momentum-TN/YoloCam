@@ -31,11 +31,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # admin site
     'django.contrib.admin',
+    # auth system
     'django.contrib.auth',
+    # A framework for content types
     'django.contrib.contenttypes',
+    # session framework
     'django.contrib.sessions',
+    #  messaging framework
     'django.contrib.messages',
+    # framework for managing static files.
     'django.contrib.staticfiles',
 ]
 
@@ -77,6 +83,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': 'yolocamdb',
+        # 'USER': 'root',
+        # 'PASSWORD': '',
+        # 'HOST': '',
+        # 'PORT': '8080',
+        
     }
 }
 
@@ -105,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Tunis'
 
 USE_I18N = True
 
